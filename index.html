@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGBToHex</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#color-box {
+    background-color: #ff4500;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #222;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+input {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 60px;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#hex {
+    font-weight: bold;
+    color: #ff4500;
+}
+    </style>
+</head>
+<body>
+    <div id="color-box">
+        <h1>RGB to Hex Converter</h2>
+        <div>
+            <label for="red">Red:</label>
+            <input type="text" id="red" value="0">
+        </div>
+        <div>
+            <label for="green">Green:</label>
+            <input type="text" id="green" value="0">
+        </div>
+        <div>
+            <label for="blue">Blue:</label>
+            <input type="text" id="blue" value="0">
+        </div>
+        <div>
+            <p>Hex: <span id="hex">000000</span></p>
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
